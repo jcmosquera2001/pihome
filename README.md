@@ -35,6 +35,7 @@ sudo chmod 774 /docker
 
 Estructura del stack Docker Compose:
 
+```yaml
 version: '3'
 services:
   homeassistant:
@@ -55,3 +56,4 @@ services:
       - "1880:1880"
     volumes:
       - /PATH_TO_YOUR_CONFIG:/data
+```
